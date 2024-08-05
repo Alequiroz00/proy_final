@@ -578,6 +578,9 @@ footer section article{
     .contenedorCards .carta .cardImg{
         height:25rem;
     }
+    .contenedorCards .cardInicio .cardImg{
+        height:25rem;
+    }
 }
 @media(max-width:995px){
     .container-fluid{
@@ -680,6 +683,12 @@ footer section article{
     .contenedorCards .carta .cardImg{
         height:20rem;
     }
+    .contenedorCards .cardInicio .cardImg{
+        height:20rem;
+    }
+    .cardBuzoNegro{
+        display: none;
+    }
 }
 @media(max-width:760px){
     h2{
@@ -757,7 +766,13 @@ footer section article{
     .contenedorCards .carta{
         height: 100%;
     }
+    .contenedorCards .cardInicio{
+        height: 100%;
+    }
     .contenedorCards .carta .cardImg{
+        height: 16.875rem;
+    }
+    .contenedorCards .cardInicio .cardImg{
         height: 16.875rem;
     }
     .gridCarrito img{
@@ -768,6 +783,15 @@ footer section article{
     }
     h1{
         font-size: 3rem;
+    }
+}
+@media(max-width:555px){
+    .galeria{
+        padding-bottom: 30px ;
+    }
+    footer{
+        padding-top: 30px;
+        margin-top: 30px;
     }
 }
 @media(max-width:550px){
@@ -783,7 +807,13 @@ footer section article{
     .contenedorCards .carta{
         height: 100%;
     }
+    .contenedorCards .cardInicio{
+        height: 100%;
+    }
     .contenedorCards .carta .cardImg{
+        height: 12.5rem;
+    }
+    .contenedorCards .cardIinicio .cardImg{
         height: 12.5rem;
     }
     .gridCarrito{
@@ -858,6 +888,9 @@ footer section article{
         margin-left: 0px;
     }
     .contenedorCards .carta .cardInfo{
+        font-size: 12px;
+    }
+    .contenedorCards .cardIinicio .cardInfo{
         font-size: 12px;
     }
 }
@@ -944,6 +977,9 @@ footer section article{
     .contenedorCards .carta .cardInfo{
         font-size: 10px;
     }
+    .contenedorCards .cardIinicio .cardInfo{
+        font-size: 10px;
+    }
     .galeria{
         height: 16.875rem;
     }
@@ -956,7 +992,13 @@ footer section article{
     .contenedorCards .carta{
         height: 100%;
     }
+    .contenedorCards .cardIinicio{
+        height: 100%;
+    }
     .contenedorCards .carta .cardImg{
+        height: 170px;
+    }
+    .contenedorCards .cardInicio .cardImg{
         height: 170px;
     }
 }
@@ -977,6 +1019,12 @@ footer section article{
         height: 100%;
     }
     .contenedorCards .carta .cardImg{
+        height: 12.5rem;
+    }
+    .contenedorCards .cardIinicio{
+        height: 100%;
+    }
+    .contenedorCards .cardIinicio .cardImg{
         height: 12.5rem;
     }
     .pagosContenedor img{
