@@ -1,0 +1,112 @@
+@media(max-width:430px){
+    h1{
+        font-size: 2rem;
+    }
+    footer{
+        padding-top: 30px;
+    }
+    .gridCarrito{
+        grid-template: repeat(9,4.0625rem)/repeat(4,1fr);
+        column-gap: 0;
+        height: auto;
+        .vista1{
+            margin-left: 0;
+            justify-self: center;
+        }
+        .vista2{
+            margin-left: 0;
+            justify-self: center;
+        }
+        .vista3{
+            margin-left: 0;
+            justify-self: center;
+        }
+        .vista4{
+            margin-left: 0;
+            justify-self: center;
+        }
+        .vista5{
+            @include medidas(100%, 100%);
+        }
+    }
+    .vista1{
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+    .vista2{
+        grid-row: 5/6;
+        grid-column: 2/3;
+    }
+    .vista3{
+        grid-row: 5/6;
+        grid-column: 3/4;
+    }
+    .vista4{
+        grid-row: 5/6;
+        grid-column: 4/5;
+    }
+    .vista5{
+        grid-row: 1/5;
+        grid-column: 2/4;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    .infoBuzo{
+        grid-row: 6/7;
+        grid-column: 1/5;
+        p{
+            font-size: .9375rem;
+        }
+    }
+    h4{
+        font-size: 1.4rem;
+    }
+    .talles{
+        grid-row: 7/8;
+        grid-column: 1/5;
+    }
+    .seleccionColor{
+        grid-row: 8/9;
+        grid-column: 1/5;
+    }
+    .botonCompra{
+        grid-row: 9/10;
+        grid-column: 1/5;
+        @include medidas(70%, 50%);
+        align-self: center;
+    }
+    .contenedorCards{
+        .carta{
+            .cardInfo{
+                font-size: 10px;
+            }
+        }
+        .cardInicio{
+            .cardInfo{
+                font-size: 10px;
+            }
+        }
+    }
+    .galeria{
+        height: 16.875rem;
+        button{
+            height: 10.625rem;
+        }
+        .contenedorCards{
+            height: 100%;
+            .carta{
+                height: 100%;
+                .cardImg{
+                    height: 170px;
+                }
+            }
+            .cardInicio{
+                height: 100%;
+                .cardImg{
+                    height: 170px;
+                }
+            }
+        }
+    }
+}

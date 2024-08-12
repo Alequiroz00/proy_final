@@ -1,0 +1,29 @@
+@media(max-width:1000px){
+    .cardInicio{
+        height: 31.25rem;
+        .cardImg{
+            height: 21.875rem;
+        }
+    }
+    .galeria{
+        height: 34.375rem;
+        margin-top: 25px;
+        button{
+            height: 25rem;
+        }
+    }
+    .contendorCards{
+        .carta{
+            .cardImg{
+                height:25rem;
+            }
+        }
+    }
+    .contendorCards{
+        .cardInicio{
+            .cardImg{
+                height:25rem;
+            }
+        }
+    }
+}

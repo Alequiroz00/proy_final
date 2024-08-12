@@ -1,0 +1,58 @@
+.sendMail input{
+    color: map-get($map: $colores, $key: color2);
+    background-color: rgba(0, 0, 0, 0.287);
+    border:1px solid black;
+    padding: 2px 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.mailSuscripcion{
+    @include flex(center, none, none);
+}
+footer{
+    section{
+        @include flex(center, none, none);
+        width: 100%;
+        article{
+            width: 24.75rem;
+        }
+    }
+}
+.imgFooter{
+    img{
+        width: 70px;
+        border-radius: 10px;
+        margin: 0px 5px 0px 10px;
+    }
+}
+.pagosContenedor{
+    display: flex;
+    flex-direction: column;
+    .pagosFila1{
+        @include flex(center, none, none);
+        flex-direction: row;
+        margin-bottom: .625rem;
+    }
+    .pagosFila2{
+        @extend .pagosFila1;
+        margin-bottom: 0px;
+    }
+}
+.iconosFooter{
+    img{
+        width:30px;
+        margin: 10px;
+    }
+    p{
+        margin-left: 10px;
+    }
+}
+.telFooter{
+    @include flex(center, center, none);
+}
+.mailFooter{
+    @extend .telFooter;
+}
+.igFooter{
+    @extend .telFooter;
+}

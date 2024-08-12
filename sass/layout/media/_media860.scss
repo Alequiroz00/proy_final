@@ -1,0 +1,67 @@
+@media(max-width:860px){
+    .gridCarrito{
+        height: 500px;
+        grid-template: repeat(4,112.5px)/repeat(3,1fr);
+        img{
+            width: auto;
+            margin-left: 50px;
+        }
+        .vista5{
+            object-fit: fill;
+            width: 130%;
+            justify-self:flex-end;
+        }
+    }
+    .vista1{
+        grid-column: 1/2;
+    }
+    .vista2{
+        grid-column: 1/2;
+    }
+    .vista3{
+        grid-column: 1/2;
+    }
+    .vista4{
+        grid-column: 1/2;
+    }
+    .vista5{
+        grid-column: 2/3;
+    }
+    .infoBuzo{
+        grid-column: 3/4;
+    }
+    .talles{
+        grid-column: 3/4;
+    }
+    .seleccionColor{
+        grid-column: 3/4;
+    }
+    .botonCompra{
+        grid-column: 3/4;
+    }
+    .galeria{
+        height: 28.125rem;
+        button{
+            height: 20rem;
+            img{
+                height: 30px;
+            }
+        }
+    }
+    .contenedorCards{
+        height: 25rem;
+        .carta{
+            .cardImg{
+                height: 20rem;
+            }
+        }
+        .cardIncio{
+            .cardImg{
+                height: 20rem;
+            }
+        }
+    }
+    .cardBuzoNegro{
+        display: none;
+    }
+}

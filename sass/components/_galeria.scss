@@ -1,0 +1,48 @@
+.galeria{
+    @include flex(space-evenly, flex-start, none);
+    @include medidas(100%, 40rem);
+    margin-bottom: 30px;
+    button{
+        background-color: rgba(0, 0, 0, 0.673);
+        @include medidas(4%, 28.6875rem);
+        img{
+            @include medidas(100%, 50px);
+        }
+    }
+}
+.contenedorCards{
+    @include flex(space-evenly, flex-start, none);
+}
+.carta{
+    @include medidas(100%, 600px);
+    margin: 0px 10px;
+    .cardImg{
+        @include medidas(100%, 28.6875rem);
+        img{
+            @include medidas(100%, 100%);
+            object-fit: contain;
+        }
+    }
+    .cardInfo{
+        margin-top: .625rem;
+        text-align: center;
+        width: 100%;
+        background-color: map-get($map: $colores, $key:color3);
+    }
+}
+.cardInicio{
+    @include medidas(100%, 600px);
+    margin: 0px 10px;
+    .cardImg{
+        @include medidas(100%, 28.6875rem);
+        img{
+            @include medidas(100%, 100%);
+            object-fit: contain;
+        }
+    }
+    .cardInfo{
+        text-align: center;
+        background-color: map-get($map: $colores, $key: color3);
+        margin-top: .9375rem;
+    }
+}

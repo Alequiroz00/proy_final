@@ -1,0 +1,36 @@
+@media(max-width:1070px){
+    .barraNavegacion{
+        nav{
+            ul{
+                font-size: 1.5625rem;
+            }
+            button{
+                height: 4.375rem;
+                object-fit: contain;
+                justify-content: center;
+                align-items:center;
+                margin-left: 0;
+            }
+        }
+    }
+    .carritoImg{
+        padding: 0;
+        height: 3.0419rem;
+        a{
+            object-fit: contain;
+            justify-content: center;
+            align-self: center;
+            margin-left: 0;
+            height: 2.5rem;
+        }
+    }
+    .mailSuscripcion{
+        form{
+            @include flex(center,none, none);
+            flex-wrap: wrap;
+        }
+        .ingresoMail{
+            height: 1.8331rem;
+        }
+    }
+}

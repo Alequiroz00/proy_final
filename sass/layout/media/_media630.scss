@@ -1,0 +1,34 @@
+@media(max-width:630px){
+    .galeria{
+        height: 25rem;
+        button{
+            @include medidas(30px, 16.875rem);
+        }
+        .contenedorCards{
+            height: 100%;
+            .carta{
+                height: 100%;
+                .cardImg{
+                    height: 16.875rem;
+                }
+            }
+            .cardInicio{
+                height: 100%;
+                .cardImg{
+                    height: 16.875rem;
+                }
+            }
+        }
+    }
+    .gridCarrito{
+        img{
+            margin-left: 20px;
+        }
+        .vista5{
+            width: 140%;
+        }
+    }
+    h1{
+        font-size: 3rem;
+    }
+}   

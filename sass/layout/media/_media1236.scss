@@ -1,0 +1,5 @@
+@media(max-width:1236px){
+    .botonCompra{
+        @include medidas(120px, 55px)
+    }
+}

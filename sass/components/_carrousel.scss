@@ -1,0 +1,26 @@
+.carrousel{
+    @include flex(space-between, none, none);
+    height:35rem;
+    margin: 50px 0px;
+    .imgCarrousel{
+        @include flex(space-evenly, none, none);
+        width: 100%;
+    }
+    button{
+        @include medidas(5.375rem, 100%);
+        img{
+            @include medidas(50px, 40px);
+        }
+    }
+    div{
+        img{
+            height: 100%;
+        }
+    }
+}
+
+
+
+
+
+

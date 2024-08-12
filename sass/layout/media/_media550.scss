@@ -1,0 +1,61 @@
+@media(max-width:550px){
+    .galeria{
+        height: 20rem;
+        button{
+            height: 12.5rem;
+        }
+        .contenedorCards{
+            height: 100%;
+        }
+    }
+    .contenedorCards{
+        .carta{
+            height: 100%;
+            .cardImg{
+                height: 12.5rem;
+            }
+        }
+        .cardInicio{
+            height: 100%;
+            .cardImg{
+                height: 12.5rem;
+            }
+        }
+    }
+    .gridCarrito{
+        height: 400px;
+        grid-template: repeat(4,5.4688rem)/repeat(3,1fr);
+        img{
+            margin-left: 0;
+        }
+        .vista1{
+            margin-left: 15px;
+        }
+        .vista2{
+            margin-left: 15px;
+        }
+        .vista3{
+            margin-left: 15px;
+        }
+        .vista4{
+            margin-left: 15px;
+        }
+    }
+    h3{
+        font-size: 1rem;
+        margin: 0;
+    }
+    .infoBuzo{
+        p{
+            font-size: .7813rem;
+        }
+    }
+    h4{
+        font-size: .90rem;
+    }
+    .seleccionColor{
+        button{
+            padding: 10px;
+        }
+    }
+}   

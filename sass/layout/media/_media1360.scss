@@ -1,0 +1,15 @@
+@media (max-width:1360px){
+    .nav-item{
+        height: 70px;
+    }
+    nav{
+        div{
+            a{//CHEQUEAR!!!!!
+                display: block;
+                justify-content: center;
+                justify-self: center;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@media(max-width:380px){
+    .cardRemeraBlanca{
+        display: none;
+    }
+    .galeria{
+        height: 20rem;
+        button{
+            height: 12.5rem;
+        }
+        .contenedorCards{
+            height: 100%;
+        }
+    }
+    .contenedorCards{
+        .carta{
+            height: 100%;
+            .cardImg{
+                height: 12.5rem;
+            }
+        }
+        .cardInicio{
+            height: 100%;
+            .cardImg{
+                height: 12.5rem;
+            }
+        }
+    }
+    .pagosContenedor{
+        img{
+            margin-left: 5px;
+        }
+    }
+    .iconosFooter{
+        img{
+            margin: 10px 5px;
+        }
+    }
+    .telFooter{
+        width: auto;
+    }
+    .mailFooter{
+        width: auto;
+    }
+    .igFooter{
+        width: auto;
+    }
+}

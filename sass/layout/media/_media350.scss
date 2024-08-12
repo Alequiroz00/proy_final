@@ -1,0 +1,12 @@
+@media(max-width:350px){
+    .pagosContenedor{
+        display: grid;
+        grid-template: repeat(3,1.25rem)/repeat(2,2.5rem);
+        .pagosFila1{
+            display: inline;
+        }
+        .pagosFila2{
+            display: inline;
+        }
+    }
+}

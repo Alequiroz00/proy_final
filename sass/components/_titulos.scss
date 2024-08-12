@@ -1,0 +1,23 @@
+h1{
+    @include fonts(3.5rem, 500);
+    font-family: "Caladea", serif;
+    margin-left: 10px
+}
+h2{
+    @include fonts(2rem,400);
+    font-family: "Caladea", serif;
+    margin: 10px 10px;
+    text-align: center;
+}
+.h2Hombre{
+    text-align: start;
+}
+h3{
+    @include fonts(1.6rem, 500);
+    margin: 0;
+}
+h4{
+    @include fonts(1.7rem, 300);
+    margin: .625rem .625rem
+}
+
