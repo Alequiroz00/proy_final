@@ -387,7 +387,8 @@ h4 {
 
 @media (max-width: 1360px) {
   .nav-item {
-    height: 70px; }
+    height: 70px;
+    font-size: 25px; }
   nav div a {
     display: block;
     justify-content: center;
@@ -424,7 +425,9 @@ h4 {
   .cardRemeraNegra {
     display: none; }
   .contenedorCards .carta .cardImg {
-    height: 500px; } }
+    height: 500px; }
+  .nav-item {
+    font-size: 1.35rem; } }
 
 @media (max-width: 1150px) {
   .nav-item {
@@ -662,7 +665,9 @@ h4 {
     padding-bottom: 30px; }
   footer {
     padding-top: 30px;
-    margin-top: 30px; } }
+    margin-top: 30px; }
+  .navbar-collapse {
+    padding-top: 350px; } }
 
 @media (max-width: 550px) {
   .galeria {
