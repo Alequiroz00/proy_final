@@ -3,7 +3,7 @@
         display: none;
     }
     .galeria{
-        height: 20rem;
+        height: 25rem;
         button{
             height: 12.5rem;
         }
@@ -22,6 +22,16 @@
             height: 100%;
             .cardImg{
                 height: 12.5rem;
+            }
+        }
+    }
+    .carrousel{
+        height: 300px;
+    }
+    .textoCambios{
+        .cuadroTexto{
+            div{
+                margin-left: 40px;
             }
         }
     }

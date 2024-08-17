@@ -35,4 +35,22 @@
     h4{
         font-size: 1.25rem;
     }
+    .galeria{
+        button{
+            @include medidas(35px, 21.875rem)
+        }
+        .contenedorCards{
+            @include medidas(90%, 100%)
+        }
+    }
+    .textoCambios{
+        .cuadroTexto{
+            display: flex;
+            flex-direction: column;
+            iframe{
+                align-self: center;
+                margin: 0;
+            }
+        }
+    }
 }

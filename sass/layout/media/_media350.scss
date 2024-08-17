@@ -1,4 +1,12 @@
 @media(max-width:350px){
+    .carrousel{
+        height: 250px;
+    }
+    .sendMail{
+        input{
+            padding: 0;
+        }
+    }
     .pagosContenedor{
         display: grid;
         grid-template: repeat(3,1.25rem)/repeat(2,2.5rem);

@@ -5,20 +5,18 @@
             height: 12.5rem;
         }
         .contenedorCards{
-            height: 100%;
-        }
-    }
-    .contenedorCards{
-        .carta{
-            height: 100%;
-            .cardImg{
-                height: 12.5rem;
+            @include medidas(90%, 100%);
+            .carta{
+                height: 100%;
+                .cardImg{
+                    height: 12.5rem;
+                }
             }
-        }
-        .cardInicio{
-            height: 100%;
-            .cardImg{
-                height: 12.5rem;
+            .cardInicio{
+                height: 100%;
+                .cardImg{
+                    height: 12.5rem;
+                }
             }
         }
     }

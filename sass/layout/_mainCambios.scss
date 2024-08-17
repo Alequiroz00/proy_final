@@ -5,11 +5,6 @@
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    iframe{
-        margin: 0px 0px 30px 33.5px;
-        width: 95%;
-        justify-content: center;
-    }
     p{
         color: map-get($map: $colores, $key: color1);
         width: 80%;
@@ -22,5 +17,10 @@
         @include medidas(100%, 100%);
         background-color: #ffffff6f;
         padding: 10px 0px;
+        iframe{
+            margin: 0 30px 0 30px;
+            width: 95%;
+            justify-content: center;
+        }
     }
 }

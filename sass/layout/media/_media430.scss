@@ -12,101 +12,121 @@
         .vista1{
             margin-left: 0;
             justify-self: center;
+            grid-row: 5/6;
+            grid-column: 1/2;
         }
         .vista2{
             margin-left: 0;
             justify-self: center;
+            grid-row: 5/6;
+            grid-column: 2/3;
         }
         .vista3{
             margin-left: 0;
             justify-self: center;
+            grid-row: 5/6;
+            grid-column: 3/4;
         }
         .vista4{
             margin-left: 0;
             justify-self: center;
+            grid-row: 5/6;
+            grid-column: 4/5;
         }
         .vista5{
             @include medidas(100%, 100%);
+            grid-row: 1/5;
+            grid-column: 2/4;
         }
-    }
-    .vista1{
-        grid-row: 5/6;
-        grid-column: 1/2;
-    }
-    .vista2{
-        grid-row: 5/6;
-        grid-column: 2/3;
-    }
-    .vista3{
-        grid-row: 5/6;
-        grid-column: 3/4;
-    }
-    .vista4{
-        grid-row: 5/6;
-        grid-column: 4/5;
-    }
-    .vista5{
-        grid-row: 1/5;
-        grid-column: 2/4;
-    }
-    h3{
-        font-size: 2rem;
-    }
-    .infoBuzo{
-        grid-row: 6/7;
-        grid-column: 1/5;
-        p{
-            font-size: .9375rem;
+        h3{
+            font-size: 1.6rem;
         }
-    }
-    h4{
-        font-size: 1.4rem;
-    }
-    .talles{
-        grid-row: 7/8;
-        grid-column: 1/5;
-    }
-    .seleccionColor{
-        grid-row: 8/9;
-        grid-column: 1/5;
-    }
-    .botonCompra{
-        grid-row: 9/10;
-        grid-column: 1/5;
-        @include medidas(70%, 50%);
-        align-self: center;
-    }
-    .contenedorCards{
-        .carta{
-            .cardInfo{
-                font-size: 10px;
+        .infoBuzo{
+            grid-row: 6/7;
+            grid-column: 1/5;
+            p{
+                font-size: .9375rem;
             }
         }
-        .cardInicio{
-            .cardInfo{
-                font-size: 10px;
-            }
+        h4{
+            font-size: 1.2rem;
         }
-    }
-    .galeria{
-        height: 16.875rem;
+        .talles{
+            grid-row: 7/8;
+            grid-column: 1/5;
+        }
+        .seleccionColor{
+            grid-row: 8/9;
+            grid-column: 1/5;
+        }
+        .botonCompra{
+            grid-row: 9/10;
+            grid-column: 1/5;
+            @include medidas(70%, 50%);
+            align-self: center;
+        }
+        }
+    .galeriaIndex{
         button{
-            height: 10.625rem;
+            display: none;
         }
+    }
+    .carteraNegra{
+        display: none;
+    }
+    // .cardInicio .cardInfo{
+    //     margin: 0;
+    // }
+    .galeriaIndex{
+        height: 420px;
         .contenedorCards{
             height: 100%;
-            .carta{
-                height: 100%;
-                .cardImg{
-                    height: 170px;
-                }
-            }
+            display: grid;
             .cardInicio{
-                height: 100%;
-                .cardImg{
-                    height: 170px;
+                align-items: center;
+                .cardInfo{
+                    margin: 0;
+                    font-size: 18px;
                 }
             }
         }
+    }
+    .contenedorGrid1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 200px;
+        grid-template-areas: 
+        "infoIndex1 imgIndex1"
+        ;
+        column-gap: 10px;
+        margin-bottom: 25px;
+    }
+    .imgIndex1{
+        grid-area: imgIndex1;
+    }
+    .infoIndex1{
+        grid-area: infoIndex1;
+    }
+    .contenedorGrid2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 200px;
+        grid-template-areas: 
+        "imgIndex2 infoIndex2"
+        ;
+        column-gap: 10px;
+        padding-bottom: 40px;
+    }
+    .imgIndex2{
+        grid-area: imgIndex2;
+    }
+    .infoIndex2{
+        grid-area: infoIndex2;
+    }
+    .mailSuscripcion .ingresoMail{
+        font-size: 7px;
+    }
+    .mailSuscripcion .botonEnviar{
+        font-size: 7px;
     }
 }

@@ -24,7 +24,7 @@
     @include medidas(50%, 20%);
     font-size: 1rem;
     color: map-get($map: $colores, $key: color2);
-    border: 1px solid black;
+    border:$grosorBorde $tipoBorde $colorBorde;
     background-color: #243456;
     align-self: flex-start;
     justify-self: center;

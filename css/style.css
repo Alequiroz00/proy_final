@@ -70,10 +70,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
-  .textoCambios iframe {
-    margin: 0px 0px 30px 33.5px;
-    width: 95%;
-    justify-content: center; }
   .textoCambios p {
     color: black;
     width: 80%;
@@ -85,6 +81,10 @@ body {
     height: 100%;
     background-color: #ffffff6f;
     padding: 10px 0px; }
+    .textoCambios .cuadroTexto iframe {
+      margin: 0 30px 0 30px;
+      width: 95%;
+      justify-content: center; }
 
 .gridCarrito {
   display: grid;
@@ -212,6 +212,9 @@ h4 {
   font-size: 1.7rem;
   font-weight: 300;
   margin: .625rem .625rem; }
+
+.navbar-collapse {
+  padding: 0 15px; }
 
 .barraNavegacion {
   display: flex;
@@ -469,22 +472,24 @@ h4 {
     height: 31.25rem; }
     .cardInicio .cardImg {
       height: 21.875rem; }
+  .carta .cardImg {
+    height: 25rem; }
   .galeria {
     height: 34.375rem;
     margin-top: 25px; }
     .galeria button {
-      height: 25rem; }
-  .contendorCards .carta .cardImg {
-    height: 25rem; }
-  .contendorCards .cardInicio .cardImg {
-    height: 25rem; } }
+      height: 21.875rem; } }
 
 @media (max-width: 995px) {
   .container-fluid {
     justify-items: center; }
   h1 {
     text-align: center;
-    font-size: 4rem; } }
+    font-size: 4rem; }
+  .navbar-collapse {
+    padding-top: 250px; }
+  .nav-item {
+    width: 205px; } }
 
 @media (max-width: 960px) {
   .carrousel {
@@ -510,48 +515,72 @@ h4 {
   .infoBuzo p {
     font-size: 1rem; }
   h4 {
-    font-size: 1.25rem; } }
+    font-size: 1.25rem; }
+  .galeria button {
+    width: 35px;
+    height: 21.875rem; }
+  .galeria .contenedorCards {
+    width: 90%;
+    height: 100%; }
+  .textoCambios .cuadroTexto {
+    display: flex;
+    flex-direction: column; }
+    .textoCambios .cuadroTexto iframe {
+      align-self: center;
+      margin: 0; } }
 
 @media (max-width: 860px) {
   .gridCarrito {
     height: 500px;
     grid-template: repeat(4, 112.5px)/repeat(3, 1fr); }
-    .vista1 {
-      grid-column: 1/2; }
-    .vista2 {
-      grid-column: 1/2; }
-    .vista3 {
-      grid-column: 1/2; }
-    .vista4 {
-      grid-column: 1/2; }
-    .vista5 {
-      grid-column: 2/3; }
-    .infoBuzo {
-      grid-column: 3/4; }
-    .talles {
-      grid-column: 3/4; }
-    .seleccionColor {
-      grid-column: 3/4; }
-    .botonCompra {
-      grid-column: 3/4; }
     .gridCarrito img {
       width: auto;
       margin-left: 50px; }
     .gridCarrito .vista5 {
       object-fit: fill;
-      justify-self: flex-end; }
+      width: 130%;
+      justify-self: flex-end;
+      margin-left: 0; }
+    .gridCarrito .vista1 {
+      grid-column: 1/2; }
+    .gridCarrito .vista2 {
+      grid-column: 1/2; }
+    .gridCarrito .vista3 {
+      grid-column: 1/2; }
+    .gridCarrito .vista4 {
+      grid-column: 1/2; }
+    .gridCarrito .vista5 {
+      grid-column: 2/3; }
+    .gridCarrito .infoBuzo {
+      grid-column: 3/4;
+      padding: 0; }
+    .gridCarrito .talles {
+      grid-column: 3/4;
+      margin: 0; }
+      .gridCarrito .talles button {
+        padding: 3px; }
+    .gridCarrito .seleccionColor {
+      grid-column: 3/4; }
+    .gridCarrito .botonCompra {
+      grid-column: 3/4; }
   .galeria {
     height: 28.125rem; }
     .galeria button {
+      width: 40px;
       height: 20rem; }
       .galeria button img {
         height: 30px; }
-  .contenedorCards {
-    height: 25rem; }
-    .contenedorCards .carta .cardImg {
-      height: 20rem; }
-    .contenedorCards .cardIncio .cardImg {
-      height: 20rem; }
+    .galeria .contenedorCards {
+      width: 90%;
+      height: 100%; }
+      .galeria .contenedorCards .cardInicio {
+        height: 100%; }
+        .galeria .contenedorCards .cardInicio .cardImg {
+          height: 20rem; }
+      .galeria .contenedorCards .carta {
+        height: 100%; }
+        .galeria .contenedorCards .carta .cardImg {
+          height: 20rem; }
   .cardBuzoNegro {
     display: none; } }
 
@@ -593,13 +622,17 @@ h4 {
     margin-bottom: 0; }
   .mailFooter p {
     margin-right: 10px;
-    margin-left: 0px; } }
+    margin-left: 0px; }
+  .gridCarrito .infoBuzo p {
+    font-size: 1rem; } }
 
-@media (max-width: 645px) {
+@media (max-width: 655px) {
   .barraEncabezado p {
     font-size: .75rem; }
   .barraEncabezado a {
-    font-size: .75rem; } }
+    font-size: .75rem; }
+  h4 {
+    font-size: 1rem; } }
 
 @media (max-width: 630px) {
   .galeria {
@@ -637,15 +670,16 @@ h4 {
     .galeria button {
       height: 12.5rem; }
     .galeria .contenedorCards {
+      width: 90%;
       height: 100%; }
-  .contenedorCards .carta {
-    height: 100%; }
-    .contenedorCards .carta .cardImg {
-      height: 12.5rem; }
-  .contenedorCards .cardInicio {
-    height: 100%; }
-    .contenedorCards .cardInicio .cardImg {
-      height: 12.5rem; }
+      .galeria .contenedorCards .carta {
+        height: 100%; }
+        .galeria .contenedorCards .carta .cardImg {
+          height: 12.5rem; }
+      .galeria .contenedorCards .cardInicio {
+        height: 100%; }
+        .galeria .contenedorCards .cardInicio .cardImg {
+          height: 12.5rem; }
   .gridCarrito {
     height: 400px;
     grid-template: repeat(4, 5.4688rem)/repeat(3, 1fr); }
@@ -684,7 +718,8 @@ h4 {
     text-align: left; }
   .mailSuscripcion .botonEnviar {
     width: 50%;
-    height: 20px; }
+    height: 20px;
+    font-size: 10px; }
   .pagosContenedor div img {
     width: 30px; }
   .iconosFooter img {
@@ -698,7 +733,14 @@ h4 {
   .contenedorCards .carta .cardInfo {
     font-size: 12px; }
   .contenedorCards .cardInicio .cardInfo {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .carrousel {
+    width: 100%;
+    height: 350px; }
+    .carrousel button {
+      width: 50px; }
+  .textoCambios p {
+    font-size: 15px; } }
 
 @media (max-width: 430px) {
   h1 {
@@ -711,79 +753,96 @@ h4 {
     height: auto; }
     .gridCarrito .vista1 {
       margin-left: 0;
-      justify-self: center; }
+      justify-self: center;
+      grid-row: 5/6;
+      grid-column: 1/2; }
     .gridCarrito .vista2 {
       margin-left: 0;
-      justify-self: center; }
+      justify-self: center;
+      grid-row: 5/6;
+      grid-column: 2/3; }
     .gridCarrito .vista3 {
       margin-left: 0;
-      justify-self: center; }
+      justify-self: center;
+      grid-row: 5/6;
+      grid-column: 3/4; }
     .gridCarrito .vista4 {
       margin-left: 0;
-      justify-self: center; }
+      justify-self: center;
+      grid-row: 5/6;
+      grid-column: 4/5; }
     .gridCarrito .vista5 {
       width: 100%;
-      height: 100%; }
-  .vista1 {
-    grid-row: 5/6;
-    grid-column: 1/2; }
-  .vista2 {
-    grid-row: 5/6;
-    grid-column: 2/3; }
-  .vista3 {
-    grid-row: 5/6;
-    grid-column: 3/4; }
-  .vista4 {
-    grid-row: 5/6;
-    grid-column: 4/5; }
-  .vista5 {
-    grid-row: 1/5;
-    grid-column: 2/4; }
-  h3 {
-    font-size: 2rem; }
-  .infoBuzo {
-    grid-row: 6/7;
-    grid-column: 1/5; }
-    .infoBuzo p {
-      font-size: .9375rem; }
-  h4 {
-    font-size: 1.4rem; }
-  .talles {
-    grid-row: 7/8;
-    grid-column: 1/5; }
-  .seleccionColor {
-    grid-row: 8/9;
-    grid-column: 1/5; }
-  .botonCompra {
-    grid-row: 9/10;
-    grid-column: 1/5;
-    width: 70%;
-    height: 50%;
-    align-self: center; }
-  .contenedorCards .carta .cardInfo {
-    font-size: 10px; }
-  .contenedorCards .cardInicio .cardInfo {
-    font-size: 10px; }
-  .galeria {
-    height: 16.875rem; }
-    .galeria button {
-      height: 10.625rem; }
-    .galeria .contenedorCards {
-      height: 100%; }
-      .galeria .contenedorCards .carta {
-        height: 100%; }
-        .galeria .contenedorCards .carta .cardImg {
-          height: 170px; }
-      .galeria .contenedorCards .cardInicio {
-        height: 100%; }
-        .galeria .contenedorCards .cardInicio .cardImg {
-          height: 170px; } }
+      height: 100%;
+      grid-row: 1/5;
+      grid-column: 2/4; }
+    .gridCarrito h3 {
+      font-size: 1.6rem; }
+    .gridCarrito .infoBuzo {
+      grid-row: 6/7;
+      grid-column: 1/5; }
+      .gridCarrito .infoBuzo p {
+        font-size: .9375rem; }
+    .gridCarrito h4 {
+      font-size: 1.2rem; }
+    .gridCarrito .talles {
+      grid-row: 7/8;
+      grid-column: 1/5; }
+    .gridCarrito .seleccionColor {
+      grid-row: 8/9;
+      grid-column: 1/5; }
+    .gridCarrito .botonCompra {
+      grid-row: 9/10;
+      grid-column: 1/5;
+      width: 70%;
+      height: 50%;
+      align-self: center; }
+  .galeriaIndex button {
+    display: none; }
+  .carteraNegra {
+    display: none; }
+  .galeriaIndex {
+    height: 420px; }
+    .galeriaIndex .contenedorCards {
+      height: 100%;
+      display: grid; }
+      .galeriaIndex .contenedorCards .cardInicio {
+        align-items: center; }
+        .galeriaIndex .contenedorCards .cardInicio .cardInfo {
+          margin: 0;
+          font-size: 18px; }
+  .contenedorGrid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px;
+    grid-template-areas: "infoIndex1 imgIndex1";
+    column-gap: 10px;
+    margin-bottom: 25px; }
+  .imgIndex1 {
+    grid-area: imgIndex1; }
+  .infoIndex1 {
+    grid-area: infoIndex1; }
+  .contenedorGrid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px;
+    grid-template-areas: "imgIndex2 infoIndex2";
+    column-gap: 10px;
+    padding-bottom: 40px; }
+  .imgIndex2 {
+    grid-area: imgIndex2; }
+  .infoIndex2 {
+    grid-area: infoIndex2; }
+  .mailSuscripcion .ingresoMail {
+    font-size: 7px; }
+  .mailSuscripcion .botonEnviar {
+    font-size: 7px; } }
 
 @media (max-width: 380px) {
   .cardRemeraBlanca {
     display: none; }
   .galeria {
-    height: 20rem; }
+    height: 25rem; }
     .galeria button {
       height: 12.5rem; }
     .galeria .contenedorCards {
@@ -796,6 +855,10 @@ h4 {
     height: 100%; }
     .contenedorCards .cardInicio .cardImg {
       height: 12.5rem; }
+  .carrousel {
+    height: 300px; }
+  .textoCambios .cuadroTexto div {
+    margin-left: 40px; }
   .pagosContenedor img {
     margin-left: 5px; }
   .iconosFooter img {
@@ -808,6 +871,10 @@ h4 {
     width: auto; } }
 
 @media (max-width: 350px) {
+  .carrousel {
+    height: 250px; }
+  .sendMail input {
+    padding: 0; }
   .pagosContenedor {
     display: grid;
     grid-template: repeat(3, 1.25rem)/repeat(2, 2.5rem); }

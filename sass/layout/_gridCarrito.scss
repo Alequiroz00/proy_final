@@ -42,7 +42,7 @@
         text-align: center;
         button{
             padding: 10px;
-            border: 2px solid black;
+            border: 2px $tipoBorde $colorBorde;
         }
     }
     .seleccionColor{
