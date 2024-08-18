@@ -3,6 +3,9 @@
     background-color: map-get($map: $colores, $key: color1);
     border-radius: 50%;
     padding: 15px;
+    &:hover{
+        transform: scale($escalaGrande)
+    }
 }
 .botonGris{
     @extend .botonNegro;

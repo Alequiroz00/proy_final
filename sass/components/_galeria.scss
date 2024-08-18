@@ -16,6 +16,9 @@
 .carta{
     @include medidas(100%, 600px);
     margin: 0px 10px;
+    &:hover{
+        transform: scale($escalaChica)
+    }
     .cardImg{
         @include medidas(100%, 28.6875rem);
         img{
@@ -33,6 +36,9 @@
 .cardInicio{
     @include medidas(100%, 600px);
     margin: 0px 10px;
+    &:hover{
+        transform: scale($escalaChica)
+    }
     .cardImg{
         @include medidas(100%, 28.6875rem);
         img{

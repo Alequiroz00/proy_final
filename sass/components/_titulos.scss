@@ -15,6 +15,7 @@ h2{
 h3{
     @include fonts(1.6rem, 500);
     margin: 0;
+    padding-bottom: 20px
 }
 h4{
     @include fonts(1.7rem, 300);
