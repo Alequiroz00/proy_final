@@ -30,6 +30,7 @@
         margin-top: .625rem;
         text-align: center;
         width: 100%;
+        height: 80px;
         background-color: map-get($map: $colores, $key:color3);
     }
 }
@@ -48,6 +49,7 @@
     }
     .cardInfo{
         text-align: center;
+        height: 80px;
         background-color: map-get($map: $colores, $key: color3);
         margin-top: .9375rem;
     }
